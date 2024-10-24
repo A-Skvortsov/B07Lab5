@@ -4,10 +4,10 @@ public class Square {
     Point startingPoint;
     double length;
 
-    public Point A;
-    public Point B;
-    public Point C;
-    public Point D;
+    Point A;
+    Point B;
+    Point C;
+    Point D;
 
     public Square() {
         this.startingPoint = new Point(0,0);
