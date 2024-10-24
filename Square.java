@@ -9,22 +9,6 @@ public class Square {
     Point C;
     Point D;
 
-    public Square() {
-        this.startingPoint = new Point(0,0);
-        this.length = 0;
-
-        this.A = new Point(0,0); this.B = new Point(0,0);
-        this.C = new Point(0,0); this.D = new Point(0,0);
-    }
-
-    public Square(double length) {
-        this.startingPoint = new Point(0,0);
-        this.length = length;
-
-        this.A = new Point(0,0); this.B = new Point(0,length);
-        this.C = new Point(length,length); this.D = new Point(length,0);
-    }
-
     public Square(Point point, double length) {
         this.startingPoint = point;
         this.length = length;
@@ -49,12 +33,17 @@ public class Square {
             return false;
         }
         Square square = (Square)o;
-        boolean cond = this.A == square.A && this.B == square.B
-                && this.C == square.C && this.D == square.D;
+        boolean cond = A.equals(square.A) && B.equals(square.B)
+                && C.equals(square.C) && D.equals(square.D);
         if (cond) {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return 5*this.A.hashCode()*this.B.hashCode()+17*this.C.hashCode()*this.D.hashCode();
     }
 
     @Override
@@ -63,4 +52,6 @@ public class Square {
                 + "Point 3: " + this.C + "\n" + "Point 4: " + this.D + "\n"
                 + "Perimeter:" + perimeter() + "\n" + "Area: " + area();
     }
+
+
 }
