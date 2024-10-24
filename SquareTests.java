@@ -18,25 +18,25 @@ class SquareTests {
 
     @Test
     void testSquarePerimeter(){
-        Square s = new Square(new Point(0, 0),10);
+        Square s = new Square(new Point(0, 0), 10);
         assertTrue(s.perimeter() - 40 < EPSILON);
     }
 
     @Test
     void testSquareEqualsItself(){
-        Square s = new Square(new Point(0, 0),1);
+        Square s = new Square(new Point(0, 0), 1);
         assertEquals(s, s);
     }
 
     @Test
     void testSquareDoesNotEqualNull(){
-        Square s = new Square(new Point(0, 0),5);
+        Square s = new Square(new Point(0, 0), 5);
         assertNotEquals(s, null);
     }
 
     @Test
     void testNullDoesNotEqualSquare(){
-        Square s = new Square(new Point(0, 0),5);
+        Square s = new Square(new Point(0, 0), 5);
         assertNotEquals(null, s);
     }
 
@@ -50,22 +50,22 @@ class SquareTests {
 
     @Test
     void testSquareEqualsAnotherSquareSameLengthTrue(){
-        Square s1 = new Square(new Point(0, 0),10);
-        Square s2 = new Square(new Point(0, 0),10);
+        Square s1 = new Square(new Point(0, 0), 10);
+        Square s2 = new Square(new Point(0, 0), 10);
         assertEquals(s1, s2);
     }
 
     @Test
     void testSquareDoesNotEqualAnotherSquareDifferentLength(){
-        Square s1 = new Square(new Point(0, 0),5);
-        Square s2 = new Square(new Point(0, 0),10);
+        Square s1 = new Square(new Point(0, 0), 5);
+        Square s2 = new Square(new Point(0, 0), 10);
         assertNotEquals(s1, s2);
     }
 
     @Test
     void testSquareHashCode(){
-        Square s1 = new Square(new Point(0, 0),5);
-        Square s2 = new Square(new Point(0, 0),5);
+        Square s1 = new Square(new Point(0, 0), 5);
+        Square s2 = new Square(new Point(0, 0), 5);
         assertEquals(s1.hashCode(), s2.hashCode());
     }
 }
