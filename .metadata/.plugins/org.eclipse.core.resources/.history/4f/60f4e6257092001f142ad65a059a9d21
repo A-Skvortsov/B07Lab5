@@ -1,0 +1,20 @@
+package lab4;
+
+public class Disregard {
+
+	public static void main(String[] args) {
+
+		/*String[] empty = {};
+		System.out.println(empty);
+		
+		Point x = new Point(2, 1);
+		System.out.println(x);
+		*/
+		
+		Point a = new DisregardClass(1, 1, 1);
+		//System.out.println(a.getZ());
+		
+		
+	}
+
+}

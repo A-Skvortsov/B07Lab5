@@ -1,0 +1,14 @@
+package lab4;
+
+public class DisregardClass extends Point{
+	double z;
+	
+	public DisregardClass(double x, double y, double z) {
+		super(x, y);
+		this.z = z;
+	}
+	
+	public double getZ() {
+		return z;
+	}
+}
