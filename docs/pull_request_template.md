@@ -10,11 +10,13 @@ List the changes you have made.
 
 List those managing the branches involved.
 
-## Additional Information
+## Type of Change
 
-Include any additional information, such as how to test your changes.
+- [ ] added
+- [ ] removed
+- [ ] modified
 
-## Checklist
+## Self Code Review Checklist
 
-- [ ] Tests passed
-- [ ] Documentation updated
+- [ ] Code runs without errors
+- [ ] Code is compatible with your partners
