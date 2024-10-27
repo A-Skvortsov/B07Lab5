@@ -1,4 +1,4 @@
-package lab5;
+package lab4;
 
 public class Circle {
 
@@ -10,7 +10,7 @@ public class Circle {
         this.radius = rad;
         this.x_center = x;
         this.y_center = y;
-    } 
+    }
 
     public double circumference(double rad){
         return 2*Math.PI*rad;
@@ -22,5 +22,5 @@ public class Circle {
         double dist = Math.sqrt(sum);
         return dist < this.radius;
 
-    }    
+    }
 }

@@ -1,0 +1,14 @@
+package lab4;
+
+public class Testing implements Comparable<Point>{
+
+	
+	public static void main(String[] args) {
+		//Triangle t = new Triangle();
+		String d = "30";
+		Integer e = (Integer)d;
+		Number h = null;
+		Number g = 34;
+	}
+	
+}

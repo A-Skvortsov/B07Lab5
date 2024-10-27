@@ -1,0 +1,10 @@
+package lab4;
+
+public class Testing {
+
+	
+	public static void main(String[] args) {
+		Triangle t = new Triangle();
+	}
+	
+}

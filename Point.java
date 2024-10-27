@@ -33,4 +33,11 @@ public class Point {
 			return false;
 		return true;
 	}
+	
+	
+	
+	
+	public static void testMethod() {
+		return;
+	}
 }
